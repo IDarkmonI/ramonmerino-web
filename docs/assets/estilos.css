@@ -129,6 +129,7 @@ a:hover { color: var(--accent); }
 .quote-grid figure { padding: 1.2rem; border-left: 2px solid #a2684c; background: var(--sand); }
 .quote-grid blockquote { font: 1.25rem/1.25 var(--serif); }
 .quote-grid figcaption, .note { margin-top: .65rem; color: var(--muted); font-size: .83rem; }
+.dossier-download { margin-top: 1rem; font-size: 1.1rem; }
 .reading-media > .video-card, .video-feature { max-width: 680px; }
 .video-card, .podcast-card, .review-card { display: block; background: #fffdf9; border: 1px solid var(--line); text-decoration: none; }
 .video-art { display: grid; place-items: center; position: relative; aspect-ratio: 16/9; overflow: hidden; background: #252420; }
@@ -196,7 +197,7 @@ details .video-grid, details .link-list { margin-top: .8rem; }
   .site-header ul { gap: 0 clamp(.58rem, 3vw, 1.25rem); }
   .site-header nav a { font-size: .95rem; }
   .hero-inner { min-height: 190px; grid-template-columns: minmax(0, 1fr); gap: 1rem; padding-block: 1.5rem; }
-  .hero-art { width: min(74%, 312px); }
+  .hero-art { width: min(74%, 312px); justify-self: center; transform: none; }
   .hero h1 { font-size: clamp(2.55rem, 9.6vw, 4rem); white-space: normal; }
   .hero-rule { margin-top: 1.05rem; }
   .spotlight, .book-head, .book-head-wide, .archive-page .book-head, .author-layout { grid-template-columns: minmax(0, 1fr); }
