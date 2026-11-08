@@ -1,5 +1,15 @@
 # Publicar la web de Ramón Merino Collado
 
+## Estado actual · 8 de noviembre de 2026
+
+La web ya está publicada en [ramonmerino.com](https://ramonmerino.com/). El repositorio es [IDarkmonI/ramonmerino-web](https://github.com/IDarkmonI/ramonmerino-web), público e independiente de Punto de Héroe. GitHub Pages sirve `main` → `/docs`; el archivo `docs/CNAME` conserva el dominio. HTTPS está activado y el certificado cubre la raíz y `www`.
+
+Para actualizarla, utiliza este mismo repositorio y conserva `docs/CNAME` y `docs/.nojekyll`. Las secciones de alta inicial que siguen quedan como referencia; no hace falta volver a crear el repositorio ni reconfigurar el dominio para publicar cambios de contenido.
+
+Punto de Héroe conserva su repositorio, dominio y contenido. En Porkbun, mantener los nameservers, los MX/TXT y el reenvío de correo. El dominio raíz usa un ALIAS a `IDarkmonI.github.io` y `www` un CNAME al mismo destino, una configuración admitida por GitHub Pages. Conservar también el TXT de verificación de GitHub.
+
+La cuestión de domicilio y NIF sigue pendiente de confirmación, como se indica en la página legal. No se han inventado esos datos.
+
 La vista previa es local. Usa **Abrir vista previa.cmd**, en la carpeta del proyecto, y el navegador abrirá [el Inicio local](http://127.0.0.1:8765/). También puedes ejecutar `python -m http.server 8765 --bind 127.0.0.1 --directory web/docs` desde la carpeta del proyecto.
 
 ## 1. Tras aprobar la vista previa
