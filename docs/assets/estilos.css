@@ -37,8 +37,8 @@ a:hover { color: var(--accent); }
 .hero { position: relative; isolation: isolate; container-type: inline-size; border-bottom: 1px solid var(--line); }
 .hero-backdrop { position: absolute; z-index: -1; inset: 0; background: radial-gradient(ellipse at 50% 38%, #f9f5ed, #f0e7da 100%); }
 .hero-inner { width: min(1440px, 100% - clamp(24px, 4vw, 64px)); min-height: 280px; display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: clamp(.75rem, 2vw, 2rem); align-items: center; align-content: center; text-align: center; padding-block: 2.1rem; }
-.hero-copy { min-width: 0; }
-.hero-art { width: 92%; justify-self: end; transform: translateX(calc((100cqw - min(1440px, 100cqw - clamp(24px, 4vw, 64px))) / 2 - clamp(12px, 1.8vw, 24px))); }
+.hero-copy { min-width: 0; transform: translateX(-12px); }
+.hero-art { width: 92%; justify-self: end; transform: translateX(calc((100cqw - min(1440px, 100cqw - clamp(24px, 4vw, 64px))) / 2 - clamp(12px, 1.8vw, 24px) - 18px)); }
 .hero-art img { width: 100%; }
 .kicker { color: var(--accent); font-size: .7rem; line-height: 1.4; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
 .hero-label { margin-bottom: 1rem; letter-spacing: .24em; }
@@ -198,6 +198,7 @@ details .video-grid, details .link-list { margin-top: .8rem; }
   .site-header nav a { font-size: .95rem; }
   .hero-inner { min-height: 190px; grid-template-columns: minmax(0, 1fr); gap: 1rem; padding-block: 1.5rem; }
   .hero-art { width: min(74%, 312px); justify-self: center; transform: none; }
+  .hero-copy { transform: none; }
   .hero h1 { font-size: clamp(2.55rem, 9.6vw, 4rem); white-space: normal; }
   .hero-rule { margin-top: 1.05rem; }
   .spotlight, .book-head, .book-head-wide, .archive-page .book-head, .author-layout { grid-template-columns: minmax(0, 1fr); }
