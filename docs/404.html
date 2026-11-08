@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="referrer" content="no-referrer">
+  <title>Página no encontrada | Ramón Merino Collado</title>
+  <style>
+    body { margin: 0; padding: clamp(2rem, 9vw, 8rem); background: #fbfaf7; color: #252420; font: 1rem/1.55 system-ui, sans-serif; }
+    h1 { font: 400 clamp(2.4rem, 8vw, 5rem)/1.05 Georgia, serif; }
+    a { color: #713e2b; text-underline-offset: .22em; }
+    a:focus-visible { outline: 2px solid #85452f; outline-offset: 5px; }
+    footer { margin-top: 3rem; font-size: .85rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <p>Ramón Merino Collado · Error 404</p>
+    <h1>Página no encontrada</h1>
+    <p>Comprueba la dirección o vuelve al inicio.</p>
+    <a id="inicio" href="/">Volver al inicio</a>
+  </main>
+  <footer><a id="legal" href="/aviso-legal-y-privacidad/">Aviso legal y privacidad</a> · <a href="https://molinosciberneticos.blogspot.com/" target="_blank" rel="noopener noreferrer">Molinos cibernéticos</a></footer>
+  <script>
+    // En la URL provisional de un repositorio de proyecto, la web vive en una subcarpeta.
+    const project = location.pathname.split('/')[1];
+    if (location.hostname.endsWith('.github.io') && project && !project.includes('.')) {
+      document.getElementById('inicio').href = '/' + project + '/';
+      document.getElementById('legal').href = '/' + project + '/aviso-legal-y-privacidad/';
+    }
+  </script>
+</body>
+</html>
