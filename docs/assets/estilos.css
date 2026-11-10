@@ -75,9 +75,9 @@ a:hover { color: var(--accent); }
 .project-info h3 { font-size: clamp(1.45rem, 3vw, 2.12rem); }
 .card-arrow { color: var(--accent); }
 .archive-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(.9rem, 3.2vw, 2.4rem); }
-.archive-card a { display: grid; grid-template-columns: clamp(94px, 10.6vw, 144px) minmax(0, 1fr); align-items: center; gap: .85rem; text-decoration: none; }
+.archive-card a { display: grid; grid-template-columns: clamp(104px, 11.8vw, 160px) minmax(0, 1fr); align-items: center; gap: .85rem; text-decoration: none; }
 .archive-card img { width: 100%; }
-.archive-card h3 { font-size: clamp(1.5rem, 2.6vw, 2.15rem); }
+.archive-card h3 { font-size: clamp(1.4rem, 2.4vw, 1.95rem); }
 .archive-card p { margin-top: .5rem; color: var(--muted); font-size: .9rem; }
 .download-card { display: grid; grid-template-columns: minmax(0, .62fr) minmax(0, 1fr); align-items: stretch; background: #fffdf9; border: 1px solid var(--line); }
 .download-art { display: grid; place-items: center; min-width: 0; padding: clamp(.55rem, 2vw, 1.3rem); background: var(--sand); }
