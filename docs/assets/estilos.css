@@ -70,11 +70,15 @@ a:hover { color: var(--accent); }
 .project-grid, .download-grid, .quote-grid, .video-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(.9rem, 2.6vw, 1.75rem); }
 .project-card a { display: block; height: 100%; border: 1px solid var(--line); background: #fffdf9; text-decoration: none; }
 .project-card img { width: 100%; }
+.catalogue-projects .project-card img {
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  padding: 3%;
+  background: var(--sand);
+}
 .project-info { display: grid; grid-template-columns: 1fr auto; align-items: center; column-gap: .6rem; padding: clamp(.9rem, 3vw, 1.5rem); }
 .project-info .kicker { grid-column: 1 / -1; margin-bottom: .4rem; }
 .project-info h3 { font-size: clamp(1.45rem, 3vw, 2.12rem); }
-.catalogue-projects .project-grid { width: min(82%, 54rem); }
-.catalogue-projects .project-info h3 { font-size: clamp(1.2rem, 2.4vw, 1.7rem); }
 .card-arrow { color: var(--accent); }
 .archive-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(.9rem, 3.2vw, 2.4rem); }
 .archive-card a { display: grid; grid-template-columns: clamp(104px, 11.8vw, 160px) minmax(0, 1fr); align-items: center; gap: .85rem; text-decoration: none; }
