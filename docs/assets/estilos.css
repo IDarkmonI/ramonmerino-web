@@ -168,10 +168,10 @@ details .video-grid, details .link-list { margin-top: .8rem; }
 .contact-card { max-width: 720px; padding: clamp(1.2rem, 4vw, 2.8rem); background: var(--sand); }
 .contact-card > p:first-child { max-width: 46ch; }
 .seasonal-feature { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); align-items: center; gap: clamp(1rem, 4vw, 3rem); }
-.seasonal-art { width: min(100%, 340px); justify-self: center; mix-blend-mode: multiply; }
+.seasonal-art { width: min(88%, 300px); justify-self: center; mix-blend-mode: multiply; }
 @media (max-width: 670px) {
   .seasonal-feature { grid-template-columns: minmax(0, 1fr); }
-  .seasonal-art { width: min(74%, 260px); }
+  .seasonal-art { width: min(66%, 230px); }
 }
 .contact-email { display: inline-block; margin-block: .8rem 1.2rem; font: clamp(1.12rem, 3.4vw, 2.1rem)/1.2 var(--serif); overflow-wrap: anywhere; }
 .contact-social > h2 { font-size: clamp(1.6rem, 3.3vw, 2.25rem); }
