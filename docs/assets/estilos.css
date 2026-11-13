@@ -171,7 +171,7 @@ details .video-grid, details .link-list { margin-top: .8rem; }
 .seasonal-art { width: min(88%, 300px); justify-self: center; mix-blend-mode: multiply; }
 @media (max-width: 670px) {
   .seasonal-feature { grid-template-columns: minmax(0, 1fr); }
-  .seasonal-art { width: min(66%, 230px); }
+  .seasonal-art { width: min(82%, 280px); }
 }
 .contact-email { display: inline-block; margin-block: .8rem 1.2rem; font: clamp(1.12rem, 3.4vw, 2.1rem)/1.2 var(--serif); overflow-wrap: anywhere; }
 .contact-social > h2 { font-size: clamp(1.6rem, 3.3vw, 2.25rem); }
