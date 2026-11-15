@@ -73,7 +73,7 @@ a:hover { color: var(--accent); }
 .catalogue-projects .project-card img {
   aspect-ratio: 16 / 9;
   object-fit: contain;
-  padding: 6%;
+  padding: 3%;
   background: var(--sand);
 }
 .project-info { display: grid; grid-template-columns: 1fr auto; align-items: center; column-gap: .6rem; padding: clamp(.9rem, 3vw, 1.5rem); }
