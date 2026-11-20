@@ -28,7 +28,9 @@
     }
   }, { threshold: 0, rootMargin: '0px 0px -50px 0px' });
 
-  for (const section of document.querySelectorAll('main .section')) {
+  const selector = 'main .section, main .catalogue-feature, main .download-grid, main .author-layout .prose > p, main .item';
+  for (const section of document.querySelectorAll(selector)) {
+    if (section.parentElement.closest(selector)) continue;
     if (section.getBoundingClientRect().top < window.innerHeight) continue;
     observer.observe(section);
     section.style.opacity = '0';
