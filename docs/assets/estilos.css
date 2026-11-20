@@ -228,9 +228,9 @@ details .video-grid, details .link-list { margin-top: .8rem; }
 }
 
 @media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
-  .home-page img { transition: transform 400ms ease; }
-  .home-page img:hover { transform: scale(1.025); }
-  .home-page .project-card a { overflow: hidden; }
+  main img { transition: scale 400ms ease; }
+  main img:hover { scale: 1.025; }
+  main .project-card a { overflow: hidden; }
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
