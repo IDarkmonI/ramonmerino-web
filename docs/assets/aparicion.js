@@ -16,7 +16,7 @@
         { opacity: 0, transform: 'translateY(18px)' },
         { opacity: 1, transform: 'translateY(0)' }
       ],
-      { duration: 900, easing: 'linear' }
+      { duration: 1500, easing: 'linear' }
     );
     animations.add(animation);
     animation.onfinish = animation.oncancel = () => animations.delete(animation);
