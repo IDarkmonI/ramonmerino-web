@@ -13,10 +13,10 @@
 
     const animation = section.animate(
       [
-        { opacity: 0, transform: 'translateY(26px)' },
+        { opacity: 0, transform: 'translateY(18px)' },
         { opacity: 1, transform: 'translateY(0)' }
       ],
-      { duration: 800, easing: 'cubic-bezier(0.22, 1, 0.36, 1)' }
+      { duration: 900, easing: 'linear' }
     );
     animations.add(animation);
     animation.onfinish = animation.oncancel = () => animations.delete(animation);
@@ -26,7 +26,7 @@
     for (const entry of entries) {
       if (entry.isIntersecting) show(entry.target, true);
     }
-  }, { threshold: 0, rootMargin: '0px 0px -80px 0px' });
+  }, { threshold: 0, rootMargin: '0px' });
 
   for (const section of document.querySelectorAll('main .section')) {
     if (section.getBoundingClientRect().top < window.innerHeight) continue;
