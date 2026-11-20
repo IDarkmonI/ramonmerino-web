@@ -9,13 +9,13 @@
       if (reducedMotion.matches || entry.target.contains(document.activeElement)) continue;
       entry.target.animate(
         [
-          { opacity: 0.2, transform: 'translateY(12px)' },
+          { opacity: 0, transform: 'translateY(26px)' },
           { opacity: 1, transform: 'translateY(0)' }
         ],
-        { duration: 550, easing: 'cubic-bezier(0.22, 1, 0.36, 1)' }
+        { duration: 800, easing: 'cubic-bezier(0.22, 1, 0.36, 1)' }
       );
     }
-  }, { threshold: 0, rootMargin: '0px 0px -24px 0px' });
+  }, { threshold: 0.12, rootMargin: '0px 0px -56px 0px' });
 
   for (const section of document.querySelectorAll('main .section')) {
     if (section.getBoundingClientRect().top >= window.innerHeight) observer.observe(section);
